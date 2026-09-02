@@ -1,0 +1,1063 @@
+/* =========================================
+   CATALOGUE PAGE
+========================================= */
+
+.catalogue-container {
+    width: min(1380px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.catalogue-hero {
+    padding: 130px 0 115px;
+    background: #f7f4ef;
+}
+
+.catalogue-hero-content {
+    max-width: 900px;
+}
+
+.catalogue-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #a47c45;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+.catalogue-hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 25px;
+
+    color: #202020;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(55px, 7vw, 95px);
+
+    line-height: .96;
+
+    font-weight: 400;
+}
+
+.catalogue-hero p {
+    max-width: 650px;
+
+    margin: 0 0 35px;
+
+    color: #777;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.catalogue-hero-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.catalogue-primary-btn,
+.catalogue-secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px 21px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.catalogue-primary-btn {
+    background: #1c1c1c;
+
+    color: #fff;
+}
+
+.catalogue-secondary-btn {
+    border: 1px solid #cdbb9f;
+
+    color: #795b34;
+
+    background: transparent;
+}
+
+.catalogue-primary-btn:hover {
+    background: #a47c45;
+}
+
+.catalogue-secondary-btn:hover {
+    background: #fff;
+}
+
+
+/* =========================================
+   COLLECTION
+========================================= */
+
+.catalogue-section {
+    padding: 110px 0;
+
+    background: #fff;
+}
+
+.catalogue-section-heading {
+    max-width: 750px;
+
+    margin-bottom: 55px;
+}
+
+.catalogue-section-heading h2 {
+    margin: 0 0 18px;
+
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 5vw, 64px);
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+.catalogue-section-heading p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CATALOGUE GRID
+========================================= */
+
+.catalogue-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.catalogue-card {
+    overflow: hidden;
+
+    border: 1px solid #e7e1d8;
+
+    background: #faf9f6;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.catalogue-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+}
+
+.featured-catalogue {
+    grid-column: span 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.catalogue-image {
+    position: relative;
+
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: #e9e4db;
+}
+
+.featured-catalogue .catalogue-image {
+    height: 100%;
+
+    aspect-ratio: auto;
+}
+
+.catalogue-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+.catalogue-card:hover .catalogue-image img {
+    transform: scale(1.04);
+}
+
+.catalogue-badge {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    padding: 7px 10px;
+
+    background: rgba(20,20,20,.88);
+
+    color: #fff;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.catalogue-card-content {
+    padding: 32px;
+}
+
+.catalogue-number {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #a47c45;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.catalogue-card h3 {
+    max-width: 450px;
+
+    margin: 0 0 13px;
+
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 29px;
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.catalogue-card p {
+    max-width: 500px;
+
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.catalogue-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #ddd7ce;
+
+    border-bottom: 1px solid #ddd7ce;
+
+    color: #888;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   CARD ACTIONS
+========================================= */
+
+.catalogue-card-actions {
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.view-catalogue,
+.download-catalogue {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-height: 44px;
+
+    padding: 0 17px;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.view-catalogue {
+    background: #1d1d1d;
+
+    color: #fff;
+}
+
+.download-catalogue {
+    border: 1px solid #ddd6cc;
+
+    color: #555;
+}
+
+.view-catalogue:hover {
+    background: #a47c45;
+}
+
+.download-catalogue:hover {
+    color: #a47c45;
+
+    border-color: #a47c45;
+}
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.catalogue-experience {
+    padding: 110px 0;
+
+    background: #f5f1ea;
+}
+
+.catalogue-experience-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    margin-bottom: 70px;
+}
+
+.catalogue-experience-heading h2 {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+.catalogue-experience-content p {
+    max-width: 600px;
+
+    margin: 0 0 20px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.catalogue-steps {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #d9d1c5;
+}
+
+.catalogue-step {
+    padding: 30px 30px 0 0;
+
+    border-right: 1px solid #d9d1c5;
+}
+
+.catalogue-step:not(:first-child) {
+    padding-left: 30px;
+}
+
+.catalogue-step:last-child {
+    border-right: none;
+}
+
+.catalogue-step > span {
+    color: #a47c45;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.catalogue-step h3 {
+    margin: 20px 0 10px;
+
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+}
+
+.catalogue-step p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   COLLECTION TYPES
+========================================= */
+
+.catalogue-types {
+    padding: 110px 0;
+
+    background: #fff;
+}
+
+.catalogue-types-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    border-top: 1px solid #ddd8d0;
+}
+
+.catalogue-types-grid article {
+    padding: 32px 30px 35px 0;
+
+    border-bottom: 1px solid #ddd8d0;
+}
+
+.catalogue-types-grid article:nth-child(3n+2),
+.catalogue-types-grid article:nth-child(3n+3) {
+    padding-left: 30px;
+
+    border-left: 1px solid #ddd8d0;
+}
+
+.catalogue-types-grid span,
+.catalogue-benefit > span {
+    color: #a47c45;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.catalogue-types-grid h3 {
+    margin: 20px 0 10px;
+
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+}
+
+.catalogue-types-grid p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   WHY SAMRAT
+========================================= */
+
+.catalogue-why {
+    padding: 110px 0;
+
+    background: #181818;
+
+    color: #fff;
+}
+
+.catalogue-why-heading {
+    margin-bottom: 60px;
+}
+
+.catalogue-why-heading h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(45px, 5vw, 68px);
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+.catalogue-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+.catalogue-benefit {
+    padding-top: 25px;
+
+    border-top: 1px solid #444;
+}
+
+.catalogue-benefit h3 {
+    margin: 20px 0 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+
+    font-weight: 400;
+}
+
+.catalogue-benefit p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.catalogue-services {
+    padding: 110px 0;
+
+    background: #f7f5f1;
+}
+
+.catalogue-service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.catalogue-service-card {
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    border: 1px solid #e2ddd5;
+
+    background: #fff;
+
+    color: #222;
+
+    text-decoration: none;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease;
+}
+
+.catalogue-service-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #a47c45;
+}
+
+.catalogue-service-card > span {
+    color: #a47c45;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.catalogue-service-card h3 {
+    margin: 35px 0 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+}
+
+.catalogue-service-card p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.catalogue-service-card strong {
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    color: #a47c45;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.catalogue-faq {
+    padding: 110px 0;
+
+    background: #fff;
+}
+
+.catalogue-faq-heading {
+    margin-bottom: 50px;
+}
+
+.catalogue-faq-heading h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 55px;
+
+    font-weight: 400;
+}
+
+.catalogue-faq-list {
+    max-width: 950px;
+}
+
+.catalogue-faq-list details {
+    border-top: 1px solid #ddd8d0;
+}
+
+.catalogue-faq-list details:last-child {
+    border-bottom: 1px solid #ddd8d0;
+}
+
+.catalogue-faq-list summary {
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+.catalogue-faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.catalogue-faq-list summary span {
+    color: #a47c45;
+
+    font-size: 22px;
+
+    font-weight: 300;
+}
+
+.catalogue-faq-list details p {
+    max-width: 800px;
+
+    margin: 0;
+
+    padding: 0 50px 25px 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.catalogue-cta {
+    padding: 120px 0;
+
+    text-align: center;
+
+    background: #161616;
+
+    color: #fff;
+}
+
+.catalogue-cta h2 {
+    max-width: 800px;
+
+    margin: 0 auto 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+.catalogue-cta p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.catalogue-cta-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.cta-whatsapp,
+.cta-call,
+.cta-consultation {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 20px;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.cta-whatsapp {
+    background: #a47c45;
+
+    color: #fff;
+}
+
+.cta-call,
+.cta-consultation {
+    border: 1px solid #555;
+
+    color: #fff;
+}
+
+.cta-call:hover,
+.cta-consultation:hover {
+    border-color: #a47c45;
+
+    color: #d0aa6e;
+}
+
+.cta-features {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    margin-top: 35px;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .catalogue-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalogue-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-catalogue {
+        grid-column: auto;
+
+        display: block;
+    }
+
+    .featured-catalogue .catalogue-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .catalogue-experience-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .catalogue-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalogue-types-grid article:nth-child(3n+2),
+    .catalogue-types-grid article:nth-child(3n+3) {
+        padding-left: 0;
+
+        border-left: none;
+    }
+
+    .catalogue-types-grid article:nth-child(even) {
+        padding-left: 30px;
+
+        border-left: 1px solid #ddd8d0;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .catalogue-hero {
+        padding: 80px 0 70px;
+    }
+
+    .catalogue-hero h1 {
+        font-size: 50px;
+    }
+
+    .catalogue-section,
+    .catalogue-experience,
+    .catalogue-types,
+    .catalogue-why,
+    .catalogue-services,
+    .catalogue-faq {
+        padding: 75px 0;
+    }
+
+    .catalogue-card-content {
+        padding: 25px 20px;
+    }
+
+    .catalogue-card h3 {
+        font-size: 25px;
+    }
+
+    .catalogue-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogue-step,
+    .catalogue-step:not(:first-child) {
+        padding: 25px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #d9d1c5;
+    }
+
+    .catalogue-types-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogue-types-grid article,
+    .catalogue-types-grid article:nth-child(even) {
+        padding: 28px 0;
+
+        border-left: none;
+    }
+
+    .catalogue-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogue-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogue-service-card {
+        min-height: 240px;
+    }
+
+    .catalogue-faq-heading h2 {
+        font-size: 42px;
+    }
+
+    .catalogue-cta {
+        padding: 80px 0;
+    }
+
+    .catalogue-cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-whatsapp,
+    .cta-call,
+    .cta-consultation {
+        justify-content: center;
+    }
+
+}
