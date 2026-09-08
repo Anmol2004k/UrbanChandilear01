@@ -1557,3 +1557,196 @@ body ,html {
 
 }
 
+ 
+        /* ---  pop up page k liye POPUP MODAL STYLING --- */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Piche ka screen dark/blur karne ke liye */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Jab popup active hoga toh ye class JS se add hogi */
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-box {
+            background: #ffffff;
+            width: 90%;
+            max-width: 450px;
+            padding: 35px 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+            font-family: Arial, sans-serif;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+
+        .popup-overlay.active .popup-box {
+            transform: translateY(0);
+        }
+
+        /* Close Button ('X') */
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .popup-close:hover {
+            color: #d9534f;
+        }
+
+        /* Form Headings */
+        .popup-box h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #111;
+            font-family: serif; /* Jaisa aapke image me classic look hai */
+        }
+
+        .popup-box p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* Form Fields */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus {
+            border-color: #d4af37; /* Gold theme touch */
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #d4af37; /* Gold color matching your luxury theme */
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #b5952f;
+        }
+    
+
+        /* new Floating page */
+ /* style="height: 2000px; background: #f4f4f4; margin: 0;" */
+   /* Common Button Base Style */
+        .fab-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fab-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        /* 1. LEFT SIDE WIDGET (Call Button) - Fixed at bottom-left */
+        .left-widget {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .fab-btn.call {
+            width: 55px;
+            height: 55px;
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        /* 2. RIGHT SIDE WIDGET (WhatsApp Button) - Fixed at bottom-right */
+        .right-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .fab-btn.whatsapp {
+            width: 55px;
+            height: 55px;
+            background-color: #25D366;
+            color: #ffffff;
+            border-radius: 50%;
+            font-size: 28px;
+        }
+
+        /* 3. SIDE-MIDDLE CATALOG TAB - Vertically centered on the right */
+        .side-middle-widget {
+            position: fixed;
+            top: 50%; /* Screen ke top se 50% niche */
+            right: 0; /* Screen ke right edge se touch */
+            transform: translateY(-50%); /* Apni height ka aadha upar shift hoga taaki perfectly center ho jaye */
+            z-index: 9998; /* WhatsApp se thoda niche rakha hai z-index */
+        }
+
+        .fab-btn.catalog-side {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 14px 8px;
+            border-radius: 6px 0 0 6px; /* Left corners round */
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            writing-mode: vertical-rl; /* Vertical text */
+            text-orientation: mixed;
+            text-transform: uppercase;
+        }
+
+        .fab-btn.catalog-side:hover {
+            background-color: #333333;
+            transform: translateY(-50%) translateX(-3px); /* Hover par thoda bahar slide hoga */
+        }
