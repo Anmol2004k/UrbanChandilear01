@@ -48,11 +48,11 @@
 
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/products">Products</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/catalogue">Catalogue</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/pages/products.php">Products</a></li>
+                        <li><a href="/pages/service.php">Services</a></li>
+                        <li><a href="/pages/catalogue.php">Catalogue</a></li>
+                        <li><a href="/pages/gallery.php">Gallery</a></li>
+                        <li><a href="/pages/contact.php">Contact</a></li>
                     </ul>
 
                 </div>
@@ -65,43 +65,43 @@
 
                     <ul>
                         <li>
-                            <a href="/services/installation">
+                            <a href="/pages/service.php">
                                 Chandelier Installation
                             </a>
                         </li>
 
                         <li>
-                            <a href="/services/cleaning">
+                            <a href="/pages/service.ph">
                                 Professional Cleaning
                             </a>
                         </li>
 
                         <li>
-                            <a href="/services/maintenance">
+                            <a href="/pages/service.ph">
                                 Maintenance & Repair
                             </a>
                         </li>
 
                         <li>
-                            <a href="/services/custom-design">
+                            <a href="/pages/service.ph">
                                 Custom Chandelier Design
                             </a>
                         </li>
 
                         <li>
-                            <a href="/services/bulk-supplier">
+                            <a href="/pages/service.php">
                                 Bulk Chandelier Supply
                             </a>
                         </li>
 
                         <li>
-                            <a href="/services/hotel-banquet">
+                            <a href="/pages/service.php">
                                 Hotel & Banquet Solutions
                             </a>
                         </li>
 
                         <li>
-                            <a href="/contact">
+                            <a href="/pages/contact.php">
                                 Free Consultation
                             </a>
                         </li>
@@ -118,37 +118,37 @@
                     <ul>
 
                         <li>
-                            <a href="/blog/what-is-a-chandelier">
+                            <a href="/">
                                 What Is a Chandelier?
                             </a>
                         </li>
 
                         <li>
-                            <a href="/blog/types-of-chandeliers">
+                            <a href="/">
                                 Types of Chandeliers
                             </a>
                         </li>
 
                         <li>
-                            <a href="/blog/chandelier-price-guide">
+                            <a href="/">
                                 Chandelier Price Guide
                             </a>
                         </li>
 
                         <li>
-                            <a href="/blog/double-height-chandelier-guide">
+                            <a href="/">
                                 Double Height Chandelier Guide
                             </a>
                         </li>
 
                         <li>
-                            <a href="/blog/chandelier-size-guide">
+                            <a href="/">
                                 Chandelier Size Guide
                             </a>
                         </li>
 
                         <li>
-                            <a href="/blog">
+                            <a href="/">
                                 All Chandelier Guides
                             </a>
                         </li>
@@ -171,43 +171,43 @@
 
                     <div class="footer-links-grid">
 
-                        <a href="/locations/delhi">
+                        <a href="/pages/contact.php">
                             Delhi
                         </a>
 
-                        <a href="/locations/mumbai">
+                        <a href="/pages/contact.php">
                             Mumbai
                         </a>
 
-                        <a href="/locations/gurgaon">
+                        <a href="/pages/contact.php">
                             Gurgaon
                         </a>
 
-                        <a href="/locations/noida">
+                        <a href="/pages/contact.php">
                             Noida
                         </a>
 
-                        <a href="/locations/lucknow">
+                        <a href="/pages/contact.php">
                             Lucknow
                         </a>
 
-                        <a href="/locations/kanpur">
+                        <a href="/pages/contact.php">
                             Kanpur
                         </a>
 
-                        <a href="/locations/ludhiana">
+                        <a href="/pages/contact.php">
                             Ludhiana
                         </a>
 
-                        <a href="/locations/chandigarh">
+                        <a href="/pages/contact.php">
                             Chandigarh
                         </a>
 
-                        <a href="/locations/jaipur">
+                        <a href="/pages/contact.php">
                             Jaipur
                         </a>
 
-                        <a href="/locations/pan-india">
+                        <a href="/pages/contact.php">
                             PAN India
                         </a>
 

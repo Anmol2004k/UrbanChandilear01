@@ -32,163 +32,7 @@
     <!--
     Apna existing header yahan paste karo
 -->
-    <header class="site-header">
-
-        <div class="header-container">
-
-            <!-- LOGO -->
-            <!-- <a href="/" class="site-logo" aria-label="Chandelier Home"> 
-    <img src="./assets/images/logo/Urban (1).png" alt="Urban Logo" width="80" height="80"> 
- 
-</a> -->
-            <a href="/" class="site-logo" aria-label="Chandelier Home">
-                <!-- Logo Image -->
-                <img src="/assets/images/logo/Urban (1).png" alt="Urban Chandelier Logo">
-
-                <!-- Side Text Container -->
-                <div class="logo-text">
-                    <span class="brand-name">Urban Chandelier</span>
-                    <span class="tagline">Luxury Chandelier Solutions</span>
-                </div>
-            </a>
-
-
-
-
-            <!-- MOBILE MENU BUTTON -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-
-            <!-- NAVIGATION -->
-            <nav class="main-navigation" id="mainNavigation">
-
-                <ul class="nav-list">
-
-                    <li class="nav-item">
-                        <a href="/">Home</a>
-                    </li>
-
-
-                    <!-- PRODUCT -->
-                    <li class="nav-item">
-                        <a href="/products">
-                            Product
-                        </a>
-                    </li>
-
-
-                    <!-- SERVICE DROPDOWN -->
-                    <li class="nav-item has-dropdown">
-
-                        <button class="dropdown-toggle">
-                            Service
-                            <span class="dropdown-arrow"></span>
-                        </button>
-
-                        <div class="dropdown-menu">
-
-                            <a href="/services/installation">
-                                <span class="dropdown-title">Installation</span>
-                                <span class="dropdown-description">
-                                    Professional chandelier installation
-                                </span>
-                            </a>
-
-                            <a href="/services/cleaning">
-                                <span class="dropdown-title">Cleaning</span>
-                                <span class="dropdown-description">
-                                    Professional chandelier cleaning
-                                </span>
-                            </a>
-
-                            <a href="/services/maintenance">
-                                <span class="dropdown-title">Maintenance</span>
-                                <span class="dropdown-description">
-                                    Regular chandelier maintenance
-                                </span>
-                            </a>
-
-                            <a href="/services/luxury-chandelier">
-                                <span class="dropdown-title">Buy Luxury Chandelier</span>
-                                <span class="dropdown-description">
-                                    Premium luxury chandelier collection
-                                </span>
-                            </a>
-
-                            <a href="/services/custom-design">
-                                <span class="dropdown-title">Custom Design</span>
-                                <span class="dropdown-description">
-                                    Bespoke chandelier design
-                                </span>
-                            </a>
-
-                            <a href="/services/bulk-supplier">
-                                <span class="dropdown-title">Bulk Chandelier Supplier</span>
-                                <span class="dropdown-description">
-                                    Bulk and commercial supply
-                                </span>
-                            </a>
-
-                            <a href="/services/hotel-banquet">
-                                <span class="dropdown-title">Hotel & Banquet</span>
-                                <span class="dropdown-description">
-                                    Chandeliers for hotels and banquets
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </li>
-
-
-                    <!-- GALLERY -->
-                    <li class="nav-item">
-                        <a href="/pages/gallery.html">
-                            Gallery
-                        </a>
-                    </li>
-
-
-                    <!-- CONTACT -->
-                    <li class="nav-item">
-                        <a href="/pages/contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-
-                    <!-- CATALOGUE -->
-                    <li class="nav-item">
-                        <a href="/pages/catalogue.html">
-                            Catalogue
-                        </a>
-                    </li>
-
-
-                    <!-- BLOG -->
-                    <li class="nav-item">
-                        <a href="/blog">
-                            Blog
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-
-            <!-- HEADER CTA -->
-            <a href="/contact" class="header-cta">
-                Get a Quote
-            </a>
-
-        </div>
-
-    </header>
+    <?php include '../includes/header.php'; ?>
 
 
     <main>
@@ -227,7 +71,7 @@
                             <span>↓</span>
                         </a>
 
-                        <a href="contact.html?service=Consultation" class="catalogue-secondary-btn">
+                        <a href="/pages/contact.php?service=Consultation" class="catalogue-secondary-btn">
                             Book Consultation
                             <span>↗</span>
                         </a>
@@ -283,7 +127,7 @@
 
                         <div class="catalogue-image">
 
-                            <img src="images/catalogue/general.webp"
+                            <img src="/assets/images/products/URBAN Chandelier.png"
                                 alt="Complete luxury chandelier and lighting solutions catalogue" loading="lazy">
 
                             <span class="catalogue-badge">
@@ -339,14 +183,21 @@
                             <span>↗</span>
                         </a> -->
 
-                                <a href="catalogue-view.html"
-                                target="_self"
-                                 class="view-catalogue">
+                                <!-- <a href="/pages/catalogue-view.php"
+                                    target="_self"
+                                    class="view-catalogue">
+                                    View Online
+                                    <span>↗</span>
+                                </a> -->
+
+                                <a href="/pages/catalogue-view.php?pdf=stone"
+                                    target="_self"
+                                    class="view-catalogue">
                                     View Online
                                     <span>↗</span>
                                 </a>
 
-                                <a href="/catalogues/Circular_Shape_Chandelier_Catalogue-Samrat_Traders.pdf" download
+                                <a href="/catalogues/Stone_Chandelier_Catalogue-Urban-Chandelier.pdf" download
                                     class="download-catalogue">
                                     Download
                                     <span>↓</span>
@@ -368,7 +219,7 @@
 
                         <div class="catalogue-image">
 
-                            <img src="images/catalogue/long-height.webp"
+                            <img src="/assets/images/products/URBAN Chandelier.png"
                                 alt="Long height chandelier catalogue for duplex homes and hotel lobbies"
                                 loading="lazy">
 
@@ -416,13 +267,14 @@
 
                             <div class="catalogue-card-actions">
 
-                                <a href="catalogues/Long-Height-Chandelier-Catalogue-Samrat-Traders.pdf" target="_blank"
+                                <a href="/pages/catalogue-view.php?pdf=rectangle"
+                                    target="_self"
                                     class="view-catalogue">
                                     View Online
                                     <span>↗</span>
                                 </a>
 
-                                <a href="catalogues/Long-Height-Chandelier-Catalogue-Samrat-Traders.pdf" download
+                                <a href="/catalogues/Rectangle_Shape_Chandelier_Catalogue-Urban_chandelier.pdf" download
                                     class="download-catalogue">
                                     Download
                                     <span>↓</span>
@@ -444,7 +296,7 @@
 
                         <div class="catalogue-image">
 
-                            <img src="images/catalogue/circular.webp" alt="Circular ring shape chandelier catalogue"
+                            <img src="/assets/images/products/URBAN Chandelier.png" alt="Circular ring shape chandelier catalogue"
                                 loading="lazy">
 
                             <span class="catalogue-badge">
@@ -491,13 +343,14 @@
 
                             <div class="catalogue-card-actions">
 
-                                <a href="catalogues/Circular-Shape-Chandelier-Catalogue-Samrat-Traders.pdf"
-                                    target="_blank" class="view-catalogue">
+                                <a href="/pages/catalogue-view.php?pdf=genie"
+                                    target="_self"
+                                    class="view-catalogue">
                                     View Online
                                     <span>↗</span>
                                 </a>
 
-                                <a href="catalogues/Circular-Shape-Chandelier-Catalogue-Samrat-Traders.pdf" download
+                                <a href="/catalogues/Stone Chandelier Catalogue - Genie Lighting (1).pdf" download
                                     class="download-catalogue">
                                     Download
                                     <span>↓</span>
@@ -519,7 +372,7 @@
 
                         <div class="catalogue-image">
 
-                            <img src="images/catalogue/rectangle.webp"
+                            <img src="/assets/images/products/URBAN Chandelier.png"
                                 alt="Modern rectangle chandelier catalogue for dining and commercial spaces"
                                 loading="lazy">
 
@@ -567,13 +420,14 @@
 
                             <div class="catalogue-card-actions">
 
-                                <a href="catalogues/Rectangle-Shape-Chandelier-Catalogue-Samrat-Traders.pdf"
-                                    target="_blank" class="view-catalogue">
+                                <a href="/pages/catalogue-view.php?pdf=long-height"
+                                    target="_self"
+                                    class="view-catalogue">
                                     View Online
                                     <span>↗</span>
                                 </a>
 
-                                <a href="catalogues/Rectangle-Shape-Chandelier-Catalogue-Samrat-Traders.pdf" download
+                                <a href="/catalogues/Long_Height_Chandelier_Catalogue-Urban_chandelier.pdf" download
                                     class="download-catalogue">
                                     Download
                                     <span>↓</span>
@@ -595,7 +449,7 @@
 
                         <div class="catalogue-image">
 
-                            <img src="images/catalogue/stone.webp" alt="Premium stone chandelier catalogue"
+                            <img src="/assets/images/products/URBAN Chandelier.png" alt="Premium stone chandelier catalogue"
                                 loading="lazy">
 
                             <span class="catalogue-badge">
@@ -642,13 +496,14 @@
 
                             <div class="catalogue-card-actions">
 
-                                <a href="catalogues/Stone-Chandelier-Catalogue-Samrat-Traders.pdf" target="_blank"
+                                <a href="/pages/catalogue-view.php?pdf=rectangle-2"
+                                    target="_self"
                                     class="view-catalogue">
                                     View Online
                                     <span>↗</span>
                                 </a>
 
-                                <a href="catalogues/Stone-Chandelier-Catalogue-Samrat-Traders.pdf" download
+                                <a href="/catalogues/Rectangle_Shape_Chandelier_Catalogue-Urban_chandelier.pdf" download
                                     class="download-catalogue">
                                     Download
                                     <span>↓</span>
@@ -917,7 +772,7 @@
 
 
         <!-- =========================================
-     WHY SAMRAT
+     WHY Urban Chandelier
 ========================================= -->
 
         <section class="catalogue-why">
@@ -1044,7 +899,7 @@
                 <div class="catalogue-service-grid">
 
 
-                    <a href="chandelier-installation.html" class="catalogue-service-card">
+                    <a href="#" class="catalogue-service-card">
 
                         <span>01</span>
 
@@ -1064,7 +919,7 @@
                     </a>
 
 
-                    <a href="chandelier-cleaning.html" class="catalogue-service-card">
+                    <a href="#" class="catalogue-service-card">
 
                         <span>02</span>
 
@@ -1084,7 +939,7 @@
                     </a>
 
 
-                    <a href="custom-chandelier-design.html" class="catalogue-service-card">
+                    <a href="#" class="catalogue-service-card">
 
                         <span>03</span>
 
@@ -1104,7 +959,7 @@
                     </a>
 
 
-                    <a href="bulk-chandelier-supplier.html" class="catalogue-service-card">
+                    <a href="/pages/contact.php" class="catalogue-service-card">
 
                         <span>04</span>
 
@@ -1274,20 +1129,20 @@
                 <div class="catalogue-cta-buttons">
 
 
-                    <a href="https://wa.me/917054118088?text=Hello%20Samrat%20Traders,%20I%20have%20seen%20your%20chandelier%20catalogue%20and%20would%20like%20to%20discuss%20a%20design."
+                    <a href="https://wa.me/917388984529?text=Hello%20Urban%20Chandelier,%20I%20have%20seen%20your%20chandelier%20catalogue%20and%20would%20like%20to%20discuss%20a%20design."
                         target="_blank" rel="noopener" class="cta-whatsapp">
                         WhatsApp Us
                         <span>↗</span>
                     </a>
 
 
-                    <a href="tel:+917054118088" class="cta-call">
+                    <a href="tel:+917388984529" class="cta-call">
                         Call Consultant
                         <span>↗</span>
                     </a>
 
 
-                    <a href="contact.html?service=Video%20Consultation" class="cta-consultation">
+                    <a href="/pages/contact.php?service=Video%20Consultation" class="cta-consultation">
                         Book Video Consultation
                         <span>↗</span>
                     </a>
@@ -1328,329 +1183,12 @@
     <!--
     Apna existing footer yahan paste karo
 -->
-    <footer class="site-footer">
+    <?php include '../includes/footer.php'; ?>
 
-        <div class="footer-container">
+    <?php include '../includes/floating-buttons.php';
+    include '../includes/popup-form.php';
 
-            <!-- TOP FOOTER -->
-            <div class="footer-top">
-
-                <!-- BRAND -->
-                <div class="footer-brand">
-
-                    <a href="/" class="footer-logo">
-                        LOGO
-                    </a>
-
-                    <p class="footer-tagline">
-                        Illuminating Luxury With Exceptional Chandeliers
-                    </p>
-
-                    <p class="footer-description">
-                        Premium chandelier solutions for luxury homes, hotels,
-                        restaurants, banquets and commercial spaces across India.
-                    </p>
-
-                    <div class="footer-contact">
-
-                        <a href="mailto:servicegeniedoorstep@gmail.com
-">
-                            servicegeniedoorstep@gmail.com
-
-                        </a>
-
-                        <a href="tel:+917388984529">
-                            +91 73889 84529
-                        </a>
-
-                        <span>
-                            India
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- QUICK LINKS -->
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/products">Products</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/catalogue">Catalogue</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-
-                </div>
-
-
-                <!-- SERVICES -->
-                <div class="footer-column">
-
-                    <h3>Chandelier Services</h3>
-
-                    <ul>
-                        <li>
-                            <a href="/services/installation">
-                                Chandelier Installation
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/cleaning">
-                                Professional Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/maintenance">
-                                Maintenance & Repair
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/custom-design">
-                                Custom Chandelier Design
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/bulk-supplier">
-                                Bulk Chandelier Supply
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/hotel-banquet">
-                                Hotel & Banquet Solutions
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/contact">
-                                Free Consultation
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-
-                <!-- GUIDES -->
-                <div class="footer-column">
-
-                    <h3>Chandelier Guides</h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="/blog/what-is-a-chandelier">
-                                What Is a Chandelier?
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/types-of-chandeliers">
-                                Types of Chandeliers
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/chandelier-price-guide">
-                                Chandelier Price Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/double-height-chandelier-guide">
-                                Double Height Chandelier Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/chandelier-size-guide">
-                                Chandelier Size Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog">
-                                All Chandelier Guides
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <!-- SECOND FOOTER ROW -->
-            <div class="footer-middle">
-
-
-                <!-- LOCATIONS -->
-                <div class="footer-large-column">
-
-                    <h3>Chandelier Services Across India</h3>
-
-                    <div class="footer-links-grid">
-
-                        <a href="/locations/delhi">
-                            Delhi
-                        </a>
-
-                        <a href="/locations/mumbai">
-                            Mumbai
-                        </a>
-
-                        <a href="/locations/gurgaon">
-                            Gurgaon
-                        </a>
-
-                        <a href="/locations/noida">
-                            Noida
-                        </a>
-
-                        <a href="/locations/lucknow">
-                            Lucknow
-                        </a>
-
-                        <a href="/locations/kanpur">
-                            Kanpur
-                        </a>
-
-                        <a href="/locations/ludhiana">
-                            Ludhiana
-                        </a>
-
-                        <a href="/locations/chandigarh">
-                            Chandigarh
-                        </a>
-
-                        <a href="/locations/jaipur">
-                            Jaipur
-                        </a>
-
-                        <a href="/locations/pan-india">
-                            PAN India
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- COMMERCIAL -->
-                <div class="footer-large-column">
-
-                    <h3>Commercial Chandelier Solutions</h3>
-
-                    <div class="footer-links-grid">
-
-                        <a href="/chandeliers-for-hotels">
-                            Hotels & Resorts
-                        </a>
-
-                        <a href="/chandeliers-for-banquet-halls">
-                            Banquet Halls
-                        </a>
-
-                        <a href="/chandeliers-for-restaurants">
-                            Restaurants
-                        </a>
-
-                        <a href="/chandeliers-for-interior-designers">
-                            Interior Designers
-                        </a>
-
-                        <a href="/chandeliers-for-architects">
-                            Architects
-                        </a>
-
-                        <a href="/commercial-chandeliers">
-                            Commercial Projects
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- NEWSLETTER -->
-            <div class="footer-newsletter">
-
-                <div class="newsletter-content">
-
-                    <span class="newsletter-label">
-                        Stay Inspired
-                    </span>
-
-                    <h3>
-                        Get chandelier inspiration & updates
-                    </h3>
-
-                    <p>
-                        Subscribe for new designs, project ideas and chandelier guides.
-                    </p>
-
-                </div>
-
-
-                <form class="newsletter-form">
-
-                    <label for="newsletter-email" class="sr-only">
-                        Email address
-                    </label>
-
-                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address"
-                        required>
-
-                    <button type="submit">
-                        Subscribe
-                    </button>
-
-                </form>
-
-            </div>
-
-
-            <!-- BOTTOM FOOTER -->
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 Your Brand Name. All rights reserved.
-                </p>
-
-                <div class="footer-legal">
-
-                    <a href="/privacy-policy">
-                        Privacy Policy
-                    </a>
-
-                    <a href="/terms">
-                        Terms & Conditions
-                    </a>
-
-                    <a href="/sitemap">
-                        Sitemap
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
+    ?>
 
     <script src="js/script.js"></script>
 

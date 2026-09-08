@@ -32,7 +32,7 @@
 <body>
 
 
-     <?php include 'includes/header.php'; ?>
+    <?php include 'includes/header.php'; ?>
 
 
     <main>
@@ -79,17 +79,17 @@
 
                     <div class="hero-buttons">
 
-                        <a href="products.html" class="btn btn-primary">
+                        <a href="/pages/products.php" class="btn btn-primary">
                             Explore Chandeliers
                         </a>
 
 
-                        <a href="contact.html" class="btn btn-outline">
+                        <a href="/pages/contact.php" class="btn btn-outline">
                             Free Consultation
                         </a>
 
 
-                        <a href="services.html" class="hero-service-link">
+                        <a href="/pages/service.php" class="hero-service-link">
                             View Our Services →
                         </a>
 
@@ -230,7 +230,7 @@
 
                         <div class="service-links">
 
-                            <a href="products.html">
+                            <a href="/pages/products.php">
                                 View Collection
                             </a>
 
@@ -272,7 +272,7 @@
 
                         <div class="service-links">
 
-                            <a href="contact.html?service=Installation">
+                            <a href="/pages/contact.php?service=Installation">
                                 Get Quote
                             </a>
 
@@ -313,7 +313,7 @@
 
                         <div class="service-links">
 
-                            <a href="contact.html?service=Cleaning">
+                            <a href="/pages/contact.php?service=Cleaning">
                                 Schedule Cleaning
                             </a>
 
@@ -353,7 +353,7 @@
 
                         <div class="service-links">
 
-                            <a href="contact.html?service=Repair">
+                            <a href="/pages/contact.php?service=Repair">
                                 Request Repair
                             </a>
 
@@ -394,7 +394,7 @@
 
                         <div class="service-links">
 
-                            <a href="contact.html?service=AMC">
+                            <a href="/pages/contact.php?service=AMC">
                                 Get AMC Details
                             </a>
 
@@ -435,7 +435,7 @@
 
                         <div class="service-links">
 
-                            <a href="contact.html?service=Custom%20Design">
+                            <a href="/pages/contact.php?service=Custom%20Design">
                                 Discuss Project
                             </a>
 
@@ -645,7 +645,7 @@
                     </div>
 
 
-                    <a href="/pages/products.html" class="text-link">
+                    <a href="/pages/products.php" class="text-link">
                         View All Products →
                     </a>
 
@@ -663,7 +663,7 @@
                                 FEATURED
                             </span>
 
-                            <img src="/assets/images/gallery/ac9b981742e96816e7cd4cc3da036500.jpg" alt="Aurora Cascade Grand Crystal Chandelier"
+                            <img src="/assets/images/gallery/Collection2.webp" alt="Aurora Cascade Grand Crystal Chandelier"
                                 loading="lazy">
 
                         </div>
@@ -688,7 +688,7 @@
                                     Price on Request
                                 </strong>
 
-                                <a href="/pages/products.html">
+                                <a href="/pages/products.php">
                                     View Details →
                                 </a>
 
@@ -708,7 +708,7 @@
                                 FEATURED
                             </span>
 
-                            <img src="/assets/images/gallery/elegant-chandelier-reflection-stockcake.jpg"
+                            <img src="/assets/images/gallery/produt10.webp"
                                 alt="Aurielle Luxe Circular Crystal Chandelier" loading="lazy">
 
                         </div>
@@ -733,7 +733,7 @@
                                     Price on Request
                                 </strong>
 
-                                <a href="/pages/products.html">
+                                <a href="/pages/products.php">
                                     View Details →
                                 </a>
 
@@ -753,7 +753,7 @@
                                 SALE
                             </span>
 
-                            <img src="/assets/images/gallery/designer-glass-chandeliers-500x500.webp" alt="Rose Arcora Modern Glass Chandelier"
+                            <img src="/assets/images/gallery/Collection1.webp" alt="Rose Arcora Modern Glass Chandelier"
                                 loading="lazy">
 
                         </div>
@@ -778,7 +778,7 @@
                                     Price on Request
                                 </strong>
 
-                                <a href="/pages/products.html">
+                                <a href="/pages/products.php">
                                     View Details →
                                 </a>
 
@@ -958,7 +958,7 @@
                             reliable on-site support.
                         </p>
 
-                        <a href="contact.html" class="btn btn-dark">
+                        <a href="/pages/contact.php" class="btn btn-dark">
                             Check Service Availability
                         </a>
 
@@ -1107,7 +1107,7 @@
                 <div class="property-grid">
 
 
-                    <a href="services.html" class="property-card reveal">
+                    <a href="/pages/service.php" class="property-card reveal">
 
                         <img src="/assets/images/general/residential.avif" alt="Luxury chandelier for residential home"
                             loading="lazy">
@@ -1120,7 +1120,7 @@
                     </a>
 
 
-                    <a href="services.html" class="property-card reveal">
+                    <a href="services" class="property-card reveal">
 
                         <img src="/assets/images/general/hotel.webp" alt="Luxury chandelier for hotel interior" loading="lazy">
 
@@ -1132,20 +1132,20 @@
                     </a>
 
 
-                    <a href="services.html" class="property-card reveal">
+                    <a href="/pages/service.php" class="property-card reveal">
 
                         <img src="/assets/images/general/banquet.avif" alt="Chandelier installation in banquet hall"
                             loading="lazy">
 
                         <div>
                             <span>03</span>
-                            <h3>Banquet Halls</h3>
+                            <h3.html>Banquet Halls</h3>
                         </div>
 
                     </a>
 
 
-                    <a href="services.html" class="property-card reveal">
+                    <a href="/pages/service.php" class="property-card reveal">
 
                         <img src="/assets/images/general/showroom.avif" alt="Decorative chandelier in showroom" loading="lazy">
 
@@ -1157,7 +1157,7 @@
                     </a>
 
 
-                    <a href="services.html" class="property-card reveal">
+                    <a href="/pages/service.php" class="property-card reveal">
 
                         <img src="/assets/images/general/corporate.avif" alt="Modern chandelier in corporate office"
                             loading="lazy">
@@ -1170,7 +1170,7 @@
                     </a>
 
 
-                    <a href="gallery.html" class="property-card reveal">
+                    <a href="/pages/gallery.php" class="property-card reveal">
 
                         <img src="/assets/images/general/heritage.jpg" alt="Luxury chandelier in heritage building"
                             loading="lazy">
@@ -1188,11 +1188,11 @@
 
                 <div class="property-actions">
 
-                    <a href="services.html" class="btn btn-dark">
+                    <a href="/pages/service.php" class="btn btn-dark">
                         Explore Services
                     </a>
 
-                    <a href="gallery.html" class="btn btn-light">
+                    <a href="/pages/gallery.php" class="btn btn-light">
                         View Gallery
                     </a>
 
@@ -1347,7 +1347,7 @@
                     </div>
 
 
-                    <a href="gallery.html" class="text-link">
+                    <a href="/pages/gallery.php" class="text-link">
                         View Complete Gallery →
                     </a>
 
@@ -1357,7 +1357,7 @@
                 <div class="home-gallery-grid">
 
 
-                    <a href="gallery.html" class="gallery-item gallery-large reveal">
+                    <a href="/pages/gallery.php" class="gallery-item gallery-large reveal">
 
                         <img src="/assets/images/general/project.avif" alt="Luxury chandelier installation project"
                             loading="lazy">
@@ -1370,7 +1370,7 @@
                     </a>
 
 
-                    <a href="gallery.html" class="gallery-item reveal">
+                    <a href="/pages/gallery.php" class="gallery-item reveal">
 
                         <img src="/assets/images/general/project-2.avif" alt="Premium chandelier project" loading="lazy">
 
@@ -1382,7 +1382,7 @@
                     </a>
 
 
-                    <a href="gallery.html" class="gallery-item reveal">
+                    <a href="/pages/gallery.php" class="gallery-item reveal">
 
                         <img src="/assets/images/general/project-3.webp" alt="Modern chandelier installation" loading="lazy">
 
@@ -1394,7 +1394,7 @@
                     </a>
 
 
-                    <a href="gallery.html" class="gallery-item reveal">
+                    <a href="/pages/gallery.php" class="gallery-item reveal">
 
                         <img src="/assets/images/general/project-4.webp" alt="Custom chandelier project" loading="lazy">
 
@@ -1447,13 +1447,13 @@
                         </a>
 
 
-                        <a href="https://wa.me/917054118088?text=Hello%2C%20I%20want%20a%20free%20consultation%20for%20a%20chandelier."
+                        <a href="https://wa.me/917388984529?text=Hello%2C%20I%20want%20a%20free%20consultation%20for%20a%20chandelier."
                             target="_blank" rel="noopener" class="btn btn-whatsapp">
                             WhatsApp
                         </a>
 
 
-                        <a href="contact.html" class="btn btn-outline-dark">
+                        <a href="/pages/contact.php" class="btn btn-outline-dark">
                             Send Enquiry
                         </a>
 
@@ -1648,7 +1648,13 @@
     <!-- =========================================
      FOOTER
 ========================================= -->
-     <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
+
+    <?php include 'includes/floating-buttons.php';
+    include 'includes/popup-form.php';
+    
+    ?>
+
 
     <script src="/js/home.js"></script>
     <script src="/js/main.js"></script>

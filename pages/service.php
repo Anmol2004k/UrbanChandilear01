@@ -14,7 +14,7 @@
     <meta name="keywords"
         content="chandelier installation, chandelier cleaning, chandelier repair, chandelier maintenance, custom chandelier design, luxury chandelier services, chandelier installation India">
 
-    <link rel="canonical" href="https://samrattraders.in/service">
+    <link rel="canonical" href="#">
 
     <!-- Main Website CSS -->
     <link rel="stylesheet" href="/css/style.css">
@@ -30,7 +30,7 @@
          Use your existing header here
     ====================================================== -->
 
-     <?php include 'includes/header.php'; ?>
+     <?php include '../includes/header.php'; ?>
 
 
 
@@ -64,12 +64,12 @@
 
                 <div class="hero-actions">
 
-                    <a href="contact.html?service=Consultation"
+                    <a href="/pages/contact.php?service=Consultation"
                         class="gold-btn">
                         Book a Consultation
                     </a>
 
-                    <a href="tel:+917054118088"
+                    <a href="tel:+917388984529"
                         class="outline-btn">
                         Call Now
                     </a>
@@ -158,12 +158,12 @@
 
                     <div class="service-buttons">
 
-                        <a href="contact.html?service=Installation"
+                        <a href="/pages/contact.php?service=Installation"
                             class="service-btn primary">
                             Book Installation
                         </a>
 
-                        <a href="tel:+917054118088"
+                        <a href="tel:+9173889845297054118088"
                             class="service-btn secondary">
                             Call Now
                         </a>
@@ -216,12 +216,12 @@
 
                     <div class="service-buttons">
 
-                        <a href="contact.html?service=Cleaning"
+                        <a href="/pages/contact.php?service=Cleaning"
                             class="service-btn primary">
                             Book Cleaning
                         </a>
 
-                        <a href="tel:+917054118088"
+                        <a href="tel:+9173889845297054118088"
                             class="service-btn secondary">
                             Call Now
                         </a>
@@ -274,12 +274,12 @@
 
                     <div class="service-buttons">
 
-                        <a href="contact.html?service=Repair"
+                        <a href="/pages/contact.php?service=Repair"
                             class="service-btn primary">
                             Book Repair
                         </a>
 
-                        <a href="tel:+917054118088"
+                        <a href="tel:+9173889845297054118088"
                             class="service-btn secondary">
                             Call Now
                         </a>
@@ -333,12 +333,12 @@
 
                     <div class="service-buttons">
 
-                        <a href="contact.html?service=Annual%20Maintenance"
+                        <a href="/pages/contact.php?service=Annual%20Maintenance"
                             class="service-btn primary">
                             Book AMC
                         </a>
 
-                        <a href="tel:+917054118088"
+                        <a href="tel:+9173889845297054118088"
                             class="service-btn secondary">
                             Call Now
                         </a>
@@ -395,12 +395,12 @@
 
                     <div class="service-buttons">
 
-                        <a href="contact.html?service=Custom%20Design"
+                        <a href="contact.php?service=Custom%20Design"
                             class="service-btn primary">
                             Book Custom Design
                         </a>
 
-                        <a href="tel:+917054118088"
+                        <a href="tel:+9173889845297054118088"
                             class="service-btn secondary">
                             Call Now
                         </a>
@@ -648,21 +648,21 @@
 
                 <div class="cta-buttons">
 
-                    <a href="contact.html?service=Consultation"
+                    <a href="/pages/contact.php?service=Consultation"
                         class="gold-btn">
                         Get Free Consultation
                     </a>
 
-                    <a href="https://wa.me/917054118088?text=Hello%20Samrat%20Traders,%20I%20need%20information%20about%20your%20chandelier%20services."
+                    <a href="https://wa.me/917388984529?text=Hello%20Samrat%20Traders,%20I%20need%20information%20about%20your%20chandelier%20services."
                         target="_blank"
                         rel="noopener"
                         class="whatsapp-btn">
                         WhatsApp Us
                     </a>
 
-                    <a href="tel:+917054118088"
+                    <a href="tel:+917388984529"
                         class="outline-btn">
-                        Call +91 7054118088
+                        Call +91  7388984529
                     </a>
 
                 </div>
@@ -686,7 +686,7 @@
             WhatsApp
         </a>
 
-        <a href="tel:+917054118088">
+        <a href="tel:+91">
             Call Now
         </a>
 
@@ -697,7 +697,14 @@
          FOOTER
          Use your existing footer here
     ====================================================== -->
-     <?php include 'includes/footer.php'; ?>
+ 
+    <?php include '../includes/footer.php'; ?>
+
+    <?php include '../includes/floating-buttons.php';
+    include '../includes/popup-form.php';
+    
+    ?>
+
    
     <!-- Main JS -->
     <script src="/js/main.js"></script>

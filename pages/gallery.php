@@ -28,162 +28,7 @@
          HEADER
     ========================================== -->
 
-    <!--
-        Paste your existing header here
-    -->
-    <header class="site-header">
-
-        <div class="header-container">
-
-            <a href="/" class="site-logo" aria-label="Chandelier Home">
-                <!-- Logo Image -->
-                <img src="/assets/images/logo/Urban (1).png" alt="Urban Chandelier Logo">
-
-                <!-- Side Text Container -->
-                <div class="logo-text">
-                    <span class="brand-name">Urban Chandelier</span>
-                    <span class="tagline">Luxury Chandelier Solutions</span>
-                </div>
-            </a>
-
-
-
-
-
-            <!-- MOBILE MENU BUTTON -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-
-            <!-- NAVIGATION -->
-            <nav class="main-navigation" id="mainNavigation">
-
-                <ul class="nav-list">
-
-                    <li class="nav-item">
-                        <a href="/">Home</a>
-                    </li>
-
-
-                    <!-- PRODUCT -->
-                    <li class="nav-item">
-                        <a href="/products">
-                            Product
-                        </a>
-                    </li>
-
-
-                    <!-- SERVICE DROPDOWN -->
-                    <li class="nav-item has-dropdown">
-
-                        <button class="dropdown-toggle">
-                            Service
-                            <span class="dropdown-arrow"></span>
-                        </button>
-
-                        <div class="dropdown-menu">
-
-                            <a href="/services/installation">
-                                <span class="dropdown-title">Installation</span>
-                                <span class="dropdown-description">
-                                    Professional chandelier installation
-                                </span>
-                            </a>
-
-                            <a href="/services/cleaning">
-                                <span class="dropdown-title">Cleaning</span>
-                                <span class="dropdown-description">
-                                    Professional chandelier cleaning
-                                </span>
-                            </a>
-
-                            <a href="/services/maintenance">
-                                <span class="dropdown-title">Maintenance</span>
-                                <span class="dropdown-description">
-                                    Regular chandelier maintenance
-                                </span>
-                            </a>
-
-                            <a href="/services/luxury-chandelier">
-                                <span class="dropdown-title">Buy Luxury Chandelier</span>
-                                <span class="dropdown-description">
-                                    Premium luxury chandelier collection
-                                </span>
-                            </a>
-
-                            <a href="/services/custom-design">
-                                <span class="dropdown-title">Custom Design</span>
-                                <span class="dropdown-description">
-                                    Bespoke chandelier design
-                                </span>
-                            </a>
-
-                            <a href="/services/bulk-supplier">
-                                <span class="dropdown-title">Bulk Chandelier Supplier</span>
-                                <span class="dropdown-description">
-                                    Bulk and commercial supply
-                                </span>
-                            </a>
-
-                            <a href="/services/hotel-banquet">
-                                <span class="dropdown-title">Hotel & Banquet</span>
-                                <span class="dropdown-description">
-                                    Chandeliers for hotels and banquets
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </li>
-
-
-                    <!-- GALLERY -->
-                    <li class="nav-item">
-                        <a href="/pages/gallery.html">
-                            Gallery
-                        </a>
-                    </li>
-
-
-                    <!-- CONTACT -->
-                    <li class="nav-item">
-                        <a href="/pages/contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-
-                    <!-- CATALOGUE -->
-                    <li class="nav-item">
-                        <a href="/pages/catalogue.html">
-                            Catalogue
-                        </a>
-                    </li>
-
-
-                    <!-- BLOG -->
-                    <li class="nav-item">
-                        <a href="/blog">
-                            Blog
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-
-            <!-- HEADER CTA -->
-            <a href="/contact" class="header-cta">
-                Get a Quote
-            </a>
-
-        </div>
-
-    </header>
+     <?php include '../includes/header.php'; ?>
 
 
     <main>
@@ -276,7 +121,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/residential-chandelier-01.webp"
+                            <img src="/assets/images/general/project-1.avif"
                                 alt="Luxury crystal chandelier installed in a double height residential living room"
                                 loading="lazy">
 
@@ -314,7 +159,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/hotel-chandelier-01.webp"
+                            <img src="/assets/images/general/project-2.avif"
                                 alt="Luxury chandelier installation in a hotel lobby" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -351,7 +196,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/banquet-chandelier-01.webp"
+                            <img src="/assets/images/general/project.avif"
                                 alt="Large decorative chandelier installed in a banquet hall" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -388,7 +233,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/commercial-chandelier-01.webp"
+                            <img src="/assets/images/general/project-3.webp"
                                 alt="Modern chandelier installation in a commercial interior" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -425,7 +270,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/custom-chandelier-01.webp"
+                            <img src="/assets/images/general/project-4.webp"
                                 alt="Custom designed luxury chandelier for a premium interior" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -462,7 +307,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/residential-chandelier-02.webp"
+                            <img src="/assets/images/general/residential.avif"
                                 alt="Elegant chandelier illuminating a luxury residential interior" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -536,7 +381,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/custom-chandelier-02.webp"
+                            <img src="/assets/images/gallery/custom-chandelier.webp"
                                 alt="Bespoke chandelier designed for a luxury interior project" loading="lazy">
 
                             <div class="gallery-overlay">
@@ -573,122 +418,116 @@
         </section>
 
 
-<!-- =========================================
+        <!-- =========================================
      SIMPLE PROJECT GRID
-========================================= -->
+    ========================================= -->
 
-<section class="simple-gallery-section">
+        <section class="simple-gallery-section">
 
-    <div class="gallery-container">
+            <div class="gallery-container">
 
-        <!-- Section Heading -->
+                <!-- Section Heading -->
 
-        <div class="simple-gallery-heading">
+                <div class="simple-gallery-heading">
 
-            <span class="section-eyebrow">
-                MORE INSPIRATION
-            </span>
+                    <span class="section-eyebrow">
+                        MORE INSPIRATION
+                    </span>
 
-            <h2>
-                Explore Our Chandelier Collection
-            </h2>
+                    <h2>
+                        Explore Our Chandelier Collection
+                    </h2>
 
-            <p>
-                Discover more chandelier designs and lighting
-                inspirations from our collection.
-            </p>
+                    <p>
+                        Discover more chandelier designs and lighting
+                        inspirations from our collection.
+                    </p>
 
-        </div>
-
-
-        <!-- Simple Grid -->
-
-        <div class="simple-gallery-grid">
+                </div>
 
 
-            <!-- IMAGE 01 -->
+                <!-- Simple Grid -->
 
-            <div class="simple-gallery-item">
+                <div class="simple-gallery-grid">
 
-                <img
-                    src="../assets/images/gallery/chandelier-01.webp"
-                    alt="Luxury crystal chandelier design"
-                    loading="lazy"
-                >
+
+                    <!-- IMAGE 01 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection1.webp"
+                            alt="Luxury crystal chandelier design"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <!-- IMAGE 02 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection2.webp"
+                            alt="Modern luxury chandelier"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <!-- IMAGE 03 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection3.avif"
+                            alt="Decorative chandelier for luxury interior"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <!-- IMAGE 04 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection4.avif"
+                            alt="Designer chandelier lighting"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <!-- IMAGE 05 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection5.avif"
+                            alt="Premium hanging chandelier"
+                            loading="lazy">
+
+                    </div>
+
+
+                    <!-- IMAGE 06 -->
+
+                    <div class="simple-gallery-item">
+
+                        <img
+                            src="/assets/images/gallery/Collection6.avif"
+                            alt="Luxury chandelier interior lighting"
+                            loading="lazy">
+
+                    </div>
+
+
+                </div>
 
             </div>
 
-
-            <!-- IMAGE 02 -->
-
-            <div class="simple-gallery-item">
-
-                <img
-                    src="../assets/images/gallery/chandelier-02.webp"
-                    alt="Modern luxury chandelier"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-            <!-- IMAGE 03 -->
-
-            <div class="simple-gallery-item">
-
-                <img
-                    src="../assets/images/gallery/chandelier-03.webp"
-                    alt="Decorative chandelier for luxury interior"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-            <!-- IMAGE 04 -->
-
-            <div class="simple-gallery-item">
-
-                <img
-                    src="../assets/images/gallery/chandelier-04.webp"
-                    alt="Designer chandelier lighting"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-            <!-- IMAGE 05 -->
-
-            <div class="simple-gallery-item">
-
-                <img
-                    src="../assets/images/gallery/chandelier-05.webp"
-                    alt="Premium hanging chandelier"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-            <!-- IMAGE 06 -->
-
-            <div class="simple-gallery-item">
-
-                <img
-                    src="../assets/images/gallery/chandelier-06.webp"
-                    alt="Luxury chandelier interior lighting"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
 
@@ -785,329 +624,12 @@
     <!--
         Paste your existing footer here
     -->
-    <footer class="site-footer">
-
-        <div class="footer-container">
-
-            <!-- TOP FOOTER -->
-            <div class="footer-top">
-
-                <!-- BRAND -->
-                <div class="footer-brand">
-
-                    <a href="/" class="footer-logo">
-                        LOGO
-                    </a>
-
-                    <p class="footer-tagline">
-                        Illuminating Luxury With Exceptional Chandeliers
-                    </p>
-
-                    <p class="footer-description">
-                        Premium chandelier solutions for luxury homes, hotels,
-                        restaurants, banquets and commercial spaces across India.
-                    </p>
-
-                    <div class="footer-contact">
-
-                        <a href="mailto:servicegeniedoorstep@gmail.com
-">
-                            servicegeniedoorstep@gmail.com
-
-                        </a>
-
-                        <a href="tel:+917388984529">
-                            +91 73889 84529
-                        </a>
-
-                        <span>
-                            India
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- QUICK LINKS -->
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/products">Products</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/catalogue">Catalogue</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-
-                </div>
-
-
-                <!-- SERVICES -->
-                <div class="footer-column">
-
-                    <h3>Chandelier Services</h3>
-
-                    <ul>
-                        <li>
-                            <a href="/services/installation">
-                                Chandelier Installation
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/cleaning">
-                                Professional Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/maintenance">
-                                Maintenance & Repair
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/custom-design">
-                                Custom Chandelier Design
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/bulk-supplier">
-                                Bulk Chandelier Supply
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/services/hotel-banquet">
-                                Hotel & Banquet Solutions
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/contact">
-                                Free Consultation
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-
-                <!-- GUIDES -->
-                <div class="footer-column">
-
-                    <h3>Chandelier Guides</h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="/blog/what-is-a-chandelier">
-                                What Is a Chandelier?
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/types-of-chandeliers">
-                                Types of Chandeliers
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/chandelier-price-guide">
-                                Chandelier Price Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/double-height-chandelier-guide">
-                                Double Height Chandelier Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog/chandelier-size-guide">
-                                Chandelier Size Guide
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/blog">
-                                All Chandelier Guides
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <!-- SECOND FOOTER ROW -->
-            <div class="footer-middle">
-
-
-                <!-- LOCATIONS -->
-                <div class="footer-large-column">
-
-                    <h3>Chandelier Services Across India</h3>
-
-                    <div class="footer-links-grid">
-
-                        <a href="/locations/delhi">
-                            Delhi
-                        </a>
-
-                        <a href="/locations/mumbai">
-                            Mumbai
-                        </a>
-
-                        <a href="/locations/gurgaon">
-                            Gurgaon
-                        </a>
-
-                        <a href="/locations/noida">
-                            Noida
-                        </a>
-
-                        <a href="/locations/lucknow">
-                            Lucknow
-                        </a>
-
-                        <a href="/locations/kanpur">
-                            Kanpur
-                        </a>
-
-                        <a href="/locations/ludhiana">
-                            Ludhiana
-                        </a>
-
-                        <a href="/locations/chandigarh">
-                            Chandigarh
-                        </a>
-
-                        <a href="/locations/jaipur">
-                            Jaipur
-                        </a>
-
-                        <a href="/locations/pan-india">
-                            PAN India
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- COMMERCIAL -->
-                <div class="footer-large-column">
-
-                    <h3>Commercial Chandelier Solutions</h3>
-
-                    <div class="footer-links-grid">
-
-                        <a href="/chandeliers-for-hotels">
-                            Hotels & Resorts
-                        </a>
-
-                        <a href="/chandeliers-for-banquet-halls">
-                            Banquet Halls
-                        </a>
-
-                        <a href="/chandeliers-for-restaurants">
-                            Restaurants
-                        </a>
-
-                        <a href="/chandeliers-for-interior-designers">
-                            Interior Designers
-                        </a>
-
-                        <a href="/chandeliers-for-architects">
-                            Architects
-                        </a>
-
-                        <a href="/commercial-chandeliers">
-                            Commercial Projects
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- NEWSLETTER -->
-            <div class="footer-newsletter">
-
-                <div class="newsletter-content">
-
-                    <span class="newsletter-label">
-                        Stay Inspired
-                    </span>
-
-                    <h3>
-                        Get chandelier inspiration & updates
-                    </h3>
-
-                    <p>
-                        Subscribe for new designs, project ideas and chandelier guides.
-                    </p>
-
-                </div>
-
-
-                <form class="newsletter-form">
-
-                    <label for="newsletter-email" class="sr-only">
-                        Email address
-                    </label>
-
-                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address"
-                        required>
-
-                    <button type="submit">
-                        Subscribe
-                    </button>
-
-                </form>
-
-            </div>
-
-
-            <!-- BOTTOM FOOTER -->
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 Your Brand Name. All rights reserved.
-                </p>
-
-                <div class="footer-legal">
-
-                    <a href="/privacy-policy">
-                        Privacy Policy
-                    </a>
-
-                    <a href="/terms">
-                        Terms & Conditions
-                    </a>
-
-                    <a href="/sitemap">
-                        Sitemap
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
+   <?php include '../includes/footer.php'; ?>
+
+    <?php include '../includes/floating-buttons.php';
+    include '../includes/popup-form.php';
+    
+    ?>
 
     <script src="../js/main.js"></script>
 

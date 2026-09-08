@@ -162,7 +162,7 @@ body ,html {
 
     position: absolute;
 
-    top: calc(100% + 18px);
+    top: 100%;
     left: 50%;
 
     transform: translateX(-50%) translateY(10px);
@@ -1230,7 +1230,7 @@ body ,html {
 
 .gallery-story {
 
-    padding: 120px 0;
+    padding: 50px 0;
 
     background: #f5f1ea;
 }
