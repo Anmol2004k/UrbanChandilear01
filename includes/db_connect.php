@@ -1,17 +1,18 @@
-
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "urban_chandeler";
+$port = 3307; // Aapka MySQL is port par chal raha hai
 
-$host = "localhost";
-$dbname = "YOUR_DATABASE_NAME";
-$username = "YOUR_DATABASE_USERNAME";
-$password = "YOUR_DATABASE_PASSWORD";
+// Connection create karein (yahan end mein $port add kiya hai)
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
-$conn = new mysqli($host, $username, $password, $dbname);
-
+// Connection check karein
 if ($conn->connect_error) {
-    die("Database connection failed.");
+    die("Database Connection Failed: " . $conn->connect_error);
 }
 
+// UTF-8 Charset set karein
 $conn->set_charset("utf8mb4");
-
 ?>

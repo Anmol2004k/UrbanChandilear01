@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
 
+        <!-- Add this right before your </head> tag -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+
+
 
 </head>
 
@@ -219,7 +224,7 @@
                         </div>
 
                         <h3>
-                            Chandelier Selling
+                             Dealing in Chandelier
                         </h3>
 
                         <p>

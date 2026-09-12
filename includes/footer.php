@@ -172,11 +172,19 @@
                     <div class="footer-links-grid">
 
                         <a href="/pages/contact.php">
-                            Delhi
+                            Delhi NCR
                         </a>
 
                         <a href="/pages/contact.php">
                             Mumbai
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Bangalore
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Pune
                         </a>
 
                         <a href="/pages/contact.php">
@@ -205,6 +213,22 @@
 
                         <a href="/pages/contact.php">
                             Jaipur
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Mathura
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Banaras
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Odisha
+                        </a>
+
+                        <a href="/pages/contact.php">
+                            Cover All Uttar Pardesh(UP)
                         </a>
 
                         <a href="/pages/contact.php">
@@ -245,6 +269,18 @@
 
                         <a href="/commercial-chandeliers">
                             Commercial Projects
+                        </a>
+
+                         <a href="/chandeliers-for-architects">
+                            Shopes
+                        </a>
+
+                         <a href="/chandeliers-for-architects">
+                            Malls
+                        </a>
+
+                         <a href="/chandeliers-for-architects">
+                            Flats and Homes
                         </a>
 
                     </div>
