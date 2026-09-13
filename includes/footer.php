@@ -6,39 +6,35 @@
             <div class="footer-top">
 
                 <!-- BRAND -->
-                <div class="footer-brand">
+               <div class="footer-brand">
 
-                    <a href="/" class="footer-logo">
-                        LOGO
-                    </a>
+     <a href="/" class="footer-logo">
+        <img src="/assets/images/logo/Urban (4).png" alt="Brand Logo" class="footer-logo-img">
+    </a>
 
-                    <p class="footer-tagline">
-                        Illuminating Luxury With Exceptional Chandeliers
-                    </p>
+    <p class="footer-tagline">
+        Illuminating Luxury With Exceptional Chandeliers
+    </p>
 
-                    <p class="footer-description">
-                        Premium chandelier solutions for luxury homes, hotels,
-                        restaurants, banquets and commercial spaces across India.
-                    </p>
+    <p class="footer-description">
+        Premium chandelier solutions for luxury homes, hotels,
+        restaurants, banquets and commercial spaces across India.
+    </p>
 
-                    <div class="footer-contact">
+    <div class="footer-contact">
+        <a href="mailto:servicegeniedoorstep@gmail.com">
+            servicegeniedoorstep@gmail.com
+        </a>
+        <a href="tel:+917388984529">
+            +91 73889 84529
+        </a>
+        <span>
+            India
+        </span>
+    </div>
 
-                        <a href="mailto:servicegeniedoorstep@gmail.com">
-                            servicegeniedoorstep@gmail.com
+</div>
 
-                        </a>
-
-                        <a href="tel:+917388984529">
-                            +91 73889 84529
-                        </a>
-
-                        <span>
-                            India
-                        </span>
-
-                    </div>
-
-                </div>
 
 
                 <!-- QUICK LINKS -->

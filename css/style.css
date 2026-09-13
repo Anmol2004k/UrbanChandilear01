@@ -522,27 +522,14 @@ body ,html {
    BRAND
 ========================================= */
 
-.footer-logo {
+ 
 
-    width: 180px;
-    height: 60px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border: 1px dashed #555555;
-
-    color: #ffffff;
-
-    text-decoration: none;
-
-    letter-spacing: 3px;
-    font-size: 14px;
-
-    margin-bottom: 25px;
+.footer-logo-img {
+  max-width: 100px;  
+  height: auto; 
+  border-radius: 50px;     
 }
+
 
 .footer-tagline {
 

@@ -344,7 +344,7 @@
 
                         <div class="gallery-image">
 
-                            <img src="../assets/images/gallery/hotel-chandelier-02.webp"
+                            <img src="/assets/images/gallery/HTB1tnZrXx_rK1RkHFqDq6yJAFXaf.avif"
                                 alt="Decorative chandelier installation in a premium hotel interior" loading="lazy">
 
                             <div class="gallery-overlay">

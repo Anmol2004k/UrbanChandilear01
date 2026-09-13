@@ -221,10 +221,10 @@
                                 </span>
 
                                 <a
-                                    href="mailto:samrattraders88@gmail.com"
+                                    href="mailto: servicegeniedoorstep@gmail.com"
                                     class="contact-email"
                                 >
-                                    servicegenie@gmail.com
+                                    servicegeniedoorstep@gmail.com
                                 </a>
 
                             </div>
@@ -253,7 +253,7 @@
                                 </span>
 
                                 <h3>
-                                    Monday – Friday
+                                    Monday – Saturday
                                 </h3>
 
                                 <p>
@@ -261,7 +261,7 @@
                                 </p>
 
                                 <p>
-                                    Saturday: 10:00 AM – 4:00 PM
+                                    Every Day We are Ready To Assist You.
                                 </p>
 
                             </div>
@@ -607,7 +607,7 @@
 
 
                                 <a
-                                    href="mailto:servicegenie@gmail.com"
+                                    href="mailto: servicegeniedoorstep@gmail.com"
                                     class="connect-card"
                                 >
 

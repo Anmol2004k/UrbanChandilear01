@@ -13,7 +13,7 @@
 ========================================= */
 
 .contact-hero {
-    padding: 125px 0 100px;
+    padding: 25px 0 40px;
     background: #f7f4ef;
 }
 
@@ -64,13 +64,14 @@
     line-height: 1.8;
 }
 
+ 
 
 /* =========================================
    MAIN CONTACT
 ========================================= */
 
 .contact-main {
-    padding: 110px 0;
+    padding: 30px 0;
 
     background: #fff;
 }
@@ -175,7 +176,7 @@
 
     color: #a47c45;
 
-    font-size: 9px;
+    font-size: 16px;
 
     font-weight: 700;
 
@@ -189,7 +190,7 @@
 
     color: #222;
 
-    font-size: 15px;
+    font-size: 20px;
 
     font-weight: 500;
 }
@@ -199,7 +200,7 @@
 
     color: #777;
 
-    font-size: 12px;
+    font-size: 18px;
 
     line-height: 1.6;
 }
@@ -216,7 +217,7 @@
 
     text-decoration: none;
 
-    font-size: 14px;
+    font-size: 20px;
 
     transition: color .25s ease;
 }
@@ -227,9 +228,9 @@
 }
 
 .contact-phone.secondary {
-    color: #888;
+    color: #000000;
 
-    font-size: 12px;
+    font-size: 20px;
 }
 
 
@@ -238,13 +239,13 @@
 ========================================= */
 
 .contact-emergency {
-    margin-top: 30px;
-
+ 
     padding: 25px;
 
     background: #181818;
 
     color: #fff;
+    border-radius: 20px;
 }
 
 .emergency-top {
@@ -256,7 +257,7 @@
 
     margin-bottom: 10px;
 
-    color: #d1aa6e;
+    color: #ed3f0ae4;
 
     font-size: 10px;
 
@@ -282,9 +283,9 @@
 .contact-emergency p {
     margin: 0 0 18px;
 
-    color: #999;
+    color: #f7f4f4;
 
-    font-size: 12px;
+    font-size: 18px;
 
     line-height: 1.6;
 }
@@ -298,13 +299,13 @@
 
     padding: 11px 15px;
 
-    background: #a47c45;
+    background: #000000;
 
     color: #fff;
 
     text-decoration: none;
 
-    font-size: 10px;
+    font-size: 20px;
 
     font-weight: 700;
 
@@ -320,7 +321,7 @@
 }
 
 .emergency-button span {
-    color: #f5e5ca;
+    color: #ffffff;
 }
 
 
@@ -641,7 +642,7 @@
 ========================================= */
 
 .location-section {
-    padding: 100px 0;
+    padding: 40px 0;
 
     background: #f5f1ea;
 }
@@ -776,7 +777,7 @@
 ========================================= */
 
 .contact-faq {
-    padding: 110px 0;
+    padding: 30px 0;
 
     background: #fff;
 }
@@ -883,7 +884,7 @@
 ========================================= */
 
 .contact-cta {
-    padding: 120px 0;
+    padding: 30px 0;
 
     text-align: center;
 
