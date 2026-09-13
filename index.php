@@ -24,10 +24,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/icons/apple-touch-icon.png" type="image/png">
 
         <!-- Add this right before your </head> tag -->
-    <script src="https://jsdelivr.net"></script>
-</head>
+ </head>
 
 
 
@@ -1523,8 +1524,7 @@
 
 
 
-                    <form class="quote-form reveal" id="quoteForm">
-
+                      <form class="quote-form reveal" id="quoteForm" method="POST">
                         <div class="form-row">
 
                             <div class="form-group">

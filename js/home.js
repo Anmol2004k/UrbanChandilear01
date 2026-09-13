@@ -62,59 +62,64 @@ document.addEventListener("DOMContentLoaded", () => {
 /* =========================================
    QUOTE FORM
 ========================================= */
+ 
 
-const quoteForm =
-    document.getElementById("quoteForm");
-
+/* =========================================
+   HOMEPAGE QUOTE FORM SUBMIT HANDLER
+========================================= */
+const quoteForm = document.getElementById("quoteForm");
+const quoteMessage = document.getElementById("formMessage");
 
 if (quoteForm) {
+    quoteForm.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Stop standard browser page reloads
 
-    quoteForm.addEventListener(
-        "submit",
-        function (event) {
+        // 1. Double submit protection: Temporarily lock the button
+        const submitBtn = quoteForm.querySelector(".form-submit");
+        if (submitBtn) submitBtn.disabled = true;
 
-            event.preventDefault();
+        if (quoteMessage) {
+            quoteMessage.textContent = "Sending your enquiry...";
+            quoteMessage.style.color = "#3498db"; // Neutral Information color
+        }
 
+        const formData = new FormData(quoteForm);
 
-            const formMessage =
-                document.getElementById(
-                    "formMessage"
-                );
+        try {
+            // 2. Fetch connection to our new standalone PHP endpoint
+            const response = await fetch('/includes/quote-process.php', {
+                method: 'POST',
+                body: formData
+            });
 
+            const result = await response.text();
+            const responseStatus = result.trim();
 
-            const name =
-                document.getElementById(
-                    "name"
-                ).value.trim();
-
-
-            const phone =
-                document.getElementById(
-                    "phone"
-                ).value.trim();
-
-
-            const service =
-                document.getElementById(
-                    "service"
-                ).value;
-
-
-            if (!name || !phone || !service) {
-
-                formMessage.textContent =
-                    "Please fill all required fields.";
-
-                return;
-
+            if (quoteMessage) {
+                if (responseStatus === 'success') {
+                    // 3. Native client feedback loop
+                    quoteMessage.textContent = "Thank you! Your quote request has been received.";
+                    quoteMessage.style.color = "#2ecc71"; // Success Green
+                    quoteForm.reset(); // Wipe inputs clean
+                } else {
+                    quoteMessage.textContent = "Error: " + result;
+                    quoteMessage.style.color = "#e74c3c"; // Failure Red
+                    if (submitBtn) submitBtn.disabled = false; // Re-enable button to let user re-try
+                }
             }
 
+        } catch (error) {
+            console.error(error);
+            if (quoteMessage) {
+                quoteMessage.textContent = "Unable to connect to the server. Please try again.";
+                quoteMessage.style.color = "#e74c3c";
+            }
+            if (submitBtn) submitBtn.disabled = false;
+        }
+    });
+}
 
-            formMessage.textContent =
-                "Thank you! Your enquiry has been received.";
 
-
-            quoteForm.reset();
 
 
             /*
@@ -130,12 +135,7 @@ if (quoteForm) {
                 ko data bhejenge.
             */
 
-        }
-    );
-
-}
-
-
+       
 /* =========================================
    WHATSAPP SERVICE LINKS
 ========================================= */

@@ -33,6 +33,10 @@
         rel="stylesheet"
         href="../css/contact.css"
     >
+    <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/icons/apple-touch-icon.png" type="image/png">
+
+
 
 </head>
 
@@ -335,8 +339,7 @@
                         <form
                             id="contactForm"
                             class="contact-form"
-                            novalidate
-                        >
+                            novalidate>
 
 
                             <div class="form-row">

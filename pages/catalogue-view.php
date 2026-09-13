@@ -93,6 +93,10 @@ $whatsappMessage = urlencode(
         rel="stylesheet"
         href="/css/catalogue-view.css"
     >
+    <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/icons/apple-touch-icon.png" type="image/png">
+
+
 
 </head>
 

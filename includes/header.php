@@ -146,7 +146,7 @@
 
 
           <!-- HEADER CTA -->
-          <a href="/contact" class="header-cta">
+          <a href="/pages/contact.php" class="header-cta">
               Get a Quote
           </a>
 

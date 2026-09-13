@@ -1,207 +1,122 @@
 /* =========================================
-   CONTACT FORM
+   CONTACT FORM (LOCAL INTEGRATION)
 ========================================= */
 
-const contactForm =
-    document.getElementById("contactForm");
-
-const formMessage =
-    document.getElementById("formMessage");
-
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
 if (contactForm) {
-
-    contactForm.addEventListener("submit", function (event) {
-
+    contactForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
-
         /* Clear previous errors */
+        document.querySelectorAll(".form-error").forEach((error) => {
+            error.textContent = "";
+        });
 
-        document
-            .querySelectorAll(".form-error")
-            .forEach((error) => {
-
-                error.textContent = "";
-
-            });
-
-
-        formMessage.className = "form-message";
-
-        formMessage.textContent = "";
-
+        if (formMessage) {
+            formMessage.className = "form-message";
+            formMessage.textContent = "";
+        }
 
         /* Get values */
-
-        const fullName =
-            document.getElementById("fullName").value.trim();
-
-        const phone =
-            document.getElementById("phone").value.trim();
-
-        const email =
-            document.getElementById("email").value.trim();
-
-        const subject =
-            document.getElementById("subject").value.trim();
-
-        const message =
-            document.getElementById("message").value.trim();
-
+        const fullName = document.getElementById("fullName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
 
         let isValid = true;
 
-
-        /* =================================
-           NAME
-        ================================= */
-
+        /* Name Validation */
         if (fullName.length < 2) {
-
-            showError(
-                "fullName",
-                "Please enter your full name."
-            );
-
+            showError("fullName", "Please enter your full name.");
             isValid = false;
-
         }
 
-
-        /* =================================
-           PHONE
-        ================================= */
-
-        const phonePattern =
-            /^[6-9]\d{9}$/;
-
-        const cleanPhone =
-            phone.replace(/\D/g, "").slice(-10);
-
-
+        /* Phone Validation */
+        const phonePattern = /^[6-9]\d{9}$/;
+        const cleanPhone = phone.replace(/\D/g, "").slice(-10);
         if (!phonePattern.test(cleanPhone)) {
-
-            showError(
-                "phone",
-                "Please enter a valid 10-digit mobile number."
-            );
-
+            showError("phone", "Please enter a valid 10-digit mobile number.");
             isValid = false;
-
         }
 
-
-        /* =================================
-           EMAIL
-        ================================= */
-
-        const emailPattern =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
+        /* Email Validation */
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
-
-            showError(
-                "email",
-                "Please enter a valid email address."
-            );
-
+            showError("email", "Please enter a valid email address.");
             isValid = false;
-
         }
 
-
-        /* =================================
-           SUBJECT
-        ================================= */
-
+        /* Subject Validation */
         if (subject.length < 3) {
-
-            showError(
-                "subject",
-                "Please enter a subject."
-            );
-
+            showError("subject", "Please enter a subject.");
             isValid = false;
-
         }
 
-
-        /* =================================
-           MESSAGE
-        ================================= */
-
+        /* Message Validation */
         if (message.length < 10) {
-
-            showError(
-                "message",
-                "Please enter at least 10 characters."
-            );
-
+            showError("message", "Please enter at least 10 characters.");
             isValid = false;
-
         }
 
+        /* If Validation fails, stop here */
+        if (!isValid) {
+            if (formMessage) {
+                formMessage.textContent = "Please check the highlighted fields.";
+                formMessage.classList.add("error");
+            }
+            return;
+        }
 
         /* =================================
-           RESULT
+           DATA SAVE LOGIC (NO LIBRARIES)
         ================================= */
-
-        if (!isValid) {
-
-            formMessage.textContent =
-                "Please check the highlighted fields.";
-
-            formMessage.classList.add("error");
-
-            return;
-
+        if (formMessage) {
+            formMessage.textContent = "Sending your message...";
+            formMessage.classList.add("info");
         }
 
+        const formData = new FormData(contactForm);
 
-        /*
-         * TEMPORARY SUCCESS
-         *
-         * Later PHP will handle:
-         *
-         * contact.php
-         * MySQL
-         * Email
-         * WhatsApp notification
-         *
-         */
+        try {
+            const response = await fetch('/includes/contact-process.php', {
+                method: 'POST',
+                body: formData
+            });
 
+            const result = await response.text();
 
-        formMessage.textContent =
-            "Thank you! Your enquiry has been received.";
+            if (formMessage) {
+                formMessage.className = "form-message"; // Reset classes
+                
+                if (result.trim() === 'success') {
+                    // Success display (Uses your existing CSS classes)
+                    formMessage.textContent = "Thank you! Your enquiry has been received we can calling You As Soon As Possible.";
+                    formMessage.classList.add("success");
+                    contactForm.reset(); // Clear form fields
+                } else {
+                    // Error returned from PHP backend
+                    formMessage.textContent = "Error: " + result;
+                    formMessage.classList.add("error");
+                }
+            }
 
-        formMessage.classList.add("success");
-
-
-        contactForm.reset();
-
-
+        } catch (error) {
+            console.error(error);
+            if (formMessage) {
+                formMessage.className = "form-message error";
+                formMessage.textContent = "Unable to connect to the server. Please try again.";
+            }
+        }
     });
-
 }
 
-
-/* =========================================
-   SHOW ERROR
-========================================= */
-
+/* Show error function */
 function showError(field, message) {
-
-    const error =
-        document.querySelector(
-            `[data-error="${field}"]`
-        );
-
+    const error = document.querySelector(`[data-error="${field}"]`);
     if (error) {
-
         error.textContent = message;
-
     }
-
 }

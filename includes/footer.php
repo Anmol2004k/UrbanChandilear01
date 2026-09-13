@@ -306,20 +306,27 @@
                 </div>
 
 
-                <form class="newsletter-form">
+                <!-- 1. Added id="newsletterForm" here -->
 
-                    <label for="newsletter-email" class="sr-only">
-                        Email address
-                    </label>
+                 
 
-                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address"
-                        required>
+<form class="newsletter-form" id="newsletterForm" method="POST">
 
-                    <button type="submit">
-                        Subscribe
-                    </button>
+    <label for="newsletter-email" class="sr-only">
+        Email address
+    </label>
 
-                </form>
+    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required>
+
+    <button type="submit">
+        Subscribe
+    </button>
+    
+    <!-- 2. Hidden box that will show success/error feedback underneath -->
+    <div id="newsletterMessage" class="form-message" style="margin-top: 10px; font-size: 14px; font-weight: bold;"></div>
+
+</form>
+
 
             </div>
 
